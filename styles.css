@@ -1,3 +1,80 @@
-.heading{
-    color: aliceblue;
+nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+}
+.nav logo img{
+    padding: 6px 6px;
+}
+.nav-logo-name{
+    color: #0D1B2A;
+    font-size: 20;
+    font-family: "Arimo", sans-serif;
+    font-weight: bold;
+}
+.hero-nav{
+    display: flex;
+    color: #575757;
+    justify-content: space-between;
+}
+.hero-nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 25px;
+    color: #575757;
+}
+.hero-nav ul li{
+    justify-content: space-between;
+    
+}
+.hero-nav ul li a{
+    font-display: block;
+    text-decoration: none;
+}
+.nav-button button{
+    background-color: #1D4ED8;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    height: auto;
+    border: none;
+    font-weight: bold;
+}
+.hero-banner{
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 786px;
+    min-width: 1551;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.hero-banner h1{
+    font-family: "Inter", sans-serif;
+    color: white;
+    font-size: 65px;
+    font-weight:700;
+    margin-bottom: 20px;
+    max-width: 800px;
+}
+.hero-banner p{
+    font-family: "Inter", sans-serif;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+    align-items: center;
+    margin-bottom: 40px;
+    max-width: 650px;
+}
+.hero-banner button{
+    margin-top: 250px;
+    border-radius: 5px;
 }
