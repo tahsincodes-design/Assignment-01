@@ -28,7 +28,9 @@ nav{
 }
 .hero-nav ul li{
     justify-content: space-between;
-    
+}
+.hero-nav a{
+    color: #575757;
 }
 .hero-nav ul li a{
     font-display: block;
@@ -65,7 +67,7 @@ nav{
     max-width: 800px;
 }
 .hero-banner p{
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     color: white;
     font-size: 20px;
@@ -75,6 +77,70 @@ nav{
     max-width: 650px;
 }
 .hero-banner button{
-    margin-top: 250px;
+    margin-top: 280px;
     border-radius: 5px;
+}
+.speakers-section {
+    margin: 0 auto;
+    padding: 80px 40px;
+    width: 100%;
+    max-width: 1440px;
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+}
+.speakers-title {
+    font-family: 'Inter', sans-serif;
+    color: #000102;
+    font-weight: 700;
+    text-align: center; 
+    font-size: 48px;    
+    margin-bottom: 48px;
+    line-height: 1.15;
+}
+
+.speakers-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 32px;
+}
+.speaker-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    border: 1px solid #f1f5f9; 
+    padding-bottom: 16px;
+}
+.speaker-card__image {
+    width: 100%;
+    aspect-ratio: 16 / 9; 
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 16px;
+}
+.speaker-card__tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #2563eb; 
+    margin-bottom: 8px;
+    padding: 0 16px; 
+}
+.speaker-card__name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #0d1b2a;
+    margin-bottom: 4px;
+    padding: 0 16px;
+}
+.speaker-card__role {
+    font-size: 14px; 
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2563ebFF; 
+    padding: 0 16px;
 }
