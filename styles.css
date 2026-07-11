@@ -1,3 +1,4 @@
+/* Naviation bar styles */
 nav{
     display: flex;
     justify-content: space-between;
@@ -46,6 +47,8 @@ nav{
     border: none;
     font-weight: bold;
 }
+
+/* Banner styles */
 .hero-banner{
     background-image: url(images/banner.jpg);
     background-size: cover;
@@ -80,6 +83,8 @@ nav{
     margin-top: 280px;
     border-radius: 5px;
 }
+
+/* Speaker section styles */
 .speakers-section {
     margin: 0 auto;
     padding: 80px 40px;
@@ -143,4 +148,73 @@ nav{
     line-height: 1.5;
     color: #2563ebFF; 
     padding: 0 16px;
+}
+
+/* Purchase bar styles */
+.card-purchase{
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.card-purchase-top{
+    align-items: center;
+    text-align: center;
+}
+#card-purchase-header{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.25;
+    color:#0d1b2aFF;;
+}
+#card-purchase-text{
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #575757FF;
+}
+.purchase-board{
+    display: flex;
+    flex-direction: row;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 1320px;;
+    margin: 0 auto;
+    padding: 80px 40px;
+    gap: 30px;
+}
+#purchase-board-pacage{
+    width: 370px;
+    border: 1px, solid #e5e7ebFF;
+    border-radius: 12px;
+    background-color: #f8f9fbFF;
+    padding: 32px;
+}
+#purchase-board-pro{
+    width: 370px;
+    border: 1px, solid #0d1b2a;
+    border-radius: 12px;
+    background-color: #0d1b2a;
+    padding: 32px;
+    color: #ffffffCC;;
+}
+#purchase-title{
+    color: #888888FF;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    text-transform: uppercase;
+}
+#purchase-member{
+     color: #888888FF;
+    font-size: 13px;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
 }
