@@ -151,70 +151,222 @@ nav{
 }
 
 /* Purchase bar styles */
-.card-purchase{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: space-between;
-    align-items: center;
+/* Container Layout */
+.card-purchase {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  flex-direction: column; /* Forces headers to sit above the cards */
+  align-items: center;
+}
 
+/* Header Section styling */
+.card-purchase-top {
+  text-align: center;
+  margin-bottom: 40px;
 }
-.card-purchase-top{
+
+#card-purchase-header {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #0d1b2a;
+  margin: 0 0 10px 0;
+}
+
+#card-purchase-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #575757;
+  margin: 0;
+}
+
+/* Flex Wrapper for the three boards */
+.purchase-board {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Shared Card Properties */
+.purchase-board-package {
+  width: 370px;
+  border: 1px solid #e5e7eb; /* Fixed comma bug */
+  border-radius: 12px;
+  background-color: #f8f9fb;
+  padding: 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Pro Card Custom Styling */
+.purchase-board-package.pro-card {
+  border: 1px solid #0d1b2a;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+/* Typography Inside Cards */
+.purchase-title {
+  color: #888888;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.32px;
+}
+
+.pro-title {
+  color: #93c5fd;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 8px 0;
+  letter-spacing: 0.32px;
+}
+
+.purchase-board-package h1 {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 1;
+  margin: 0 0 4px 0;
+  color: #0d1b2a;
+}
+
+.pro-card h1 {
+  color: #ffffff;
+}
+
+.purchase-member {
+  color: #888888;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+
+.pro-members {
+  color: #ffffff80;
+  font-size: 13px;
+  margin: 0 0 20px 0;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid #e5e7eb;
+  margin: 0 0 20px 0;
+  width: 100%;
+}
+
+.pro-card hr {
+  border-top: 1px solid #23354a;
+}
+
+/* Lists styling */
+.purchase-board-package ul {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 0 0 30px 0;
+  flex-grow: 1; /* Pushes button cleanly to the bottom */
+}
+
+.purchase-board-package ul li {
+  font-size: 14px;
+  line-height: 2;
+  color: #333333;
+}
+
+.pro-card ul li {
+  color: #e5e7eb;
+}
+
+.purchase-board-package ul li::marker {
+  color: #2563eb;
+}
+
+/* Buttons Engine */
+.purchase-board-package button {
+  width: 100%;
+  height: 48px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+/* Standard Card Button */
+.btn-secondary {
+  background: transparent;
+  border-color: #2563eb !important;
+  color: #2563eb;
+}
+.btn-secondary:hover {
+  background: #2563eb;
+  color: #fff;
+}
+
+/* Pro Card Button */
+.btn-primary {
+  background: #2563eb;
+  color: #ffffff;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Team Card Button */
+.btn-dark {
+  background: transparent;
+  border-color: #4b5563 !important;
+  color: #1f2937;
+}
+.btn-dark:hover {
+  background: #1f2937;
+  color: #fff;
+}
+
+/* Responsive adjustment for small screens */
+@media (max-width: 992px) {
+  .purchase-board {
+    flex-direction: column;
     align-items: center;
-    text-align: center;
+  }
 }
-#card-purchase-header{
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 48px;
-    font-weight: 700;
-    line-height: 1.25;
-    color:#0d1b2aFF;;
+.site-footer {
+  background-color: #0d1b2aFF; 
+  padding: 30px 20px;
+  font-family: 'Inter', sans-serif;
 }
-#card-purchase-text{
-    text-align: center;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #575757FF;
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.purchase-board{
-    display: flex;
-    flex-direction: row;
-    background-color: #ffffff;
-    width: 100%;
-    max-width: 1320px;;
-    margin: 0 auto;
-    padding: 80px 40px;
-    gap: 30px;
+
+
+.footer-copyright p {
+  color: #ffffff66; 
+  font-size: 16px;
+  margin: 0;
 }
-#purchase-board-pacage{
-    width: 370px;
-    border: 1px, solid #e5e7ebFF;
-    border-radius: 12px;
-    background-color: #f8f9fbFF;
-    padding: 32px;
+.footer-links {
+  display: flex;
+  gap: 20px; 
 }
-#purchase-board-pro{
-    width: 370px;
-    border: 1px, solid #0d1b2a;
-    border-radius: 12px;
-    background-color: #0d1b2a;
-    padding: 32px;
-    color: #ffffffCC;;
+.footer-links a {
+  color:#ffffff66;;
+  text-decoration: none;
+  font-size: 14px;
 }
-#purchase-title{
-    color: #888888FF;
-    font-size: 13px;
-    font-weight: 600;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
-    text-transform: uppercase;
-}
-#purchase-member{
-     color: #888888FF;
-    font-size: 13px;
-    line-height: 1.5;
-    letter-spacing: 0.32px;
+.footer-links a:hover {
+  color: #ffffff;
 }

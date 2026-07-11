@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,11 @@
     <link rel="stylesheet" href="./styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <main>
         <section>
@@ -16,7 +20,7 @@
                 <div class="nav-logo">
                     <img src="./images/logo.png" alt="logo image">
                 </div>
-                    
+
                 <div class="hero-nav">
                     <ul>
                         <li><a href="">Speakers</a></li>
@@ -37,62 +41,62 @@
         <section class="hero-banner">
             <div>
                 <h1>Code. <em>Connect. </em>Create</h1>
-                <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
+                <p>Join 4,000+ engineers, founders, and builders at the premier developer conference of 2026. Three days
+                    of cutting-edge talks, hands-on workshops, and meaningful connections.</p>
             </div>
             <div class="nav-button">
-                 <button >Register Now</button>
+                <button>Register Now</button>
             </div>
         </section>
 
         <section class="speakers-section">
             <h1 class="speakers-title">Meet the Speakers</h1>
-        
-        <div class="speakers-grid">
 
-            <article class="speaker-card">
-                <img src="./images/andrej.png" alt="Andrej Karpathy" class="speaker-card__image">
-                <span class="speaker-card__tag tag-ai">AI / ML</span>
-                <h3 class="speaker-card__name">Andrej Karpathy</h3>
-                <p class="speaker-card__role">Pretraining team, Anthropic</p>
-            </article>
-            
-            
-            <article class="speaker-card">
-                <img src="./images/demis.png" alt="Demis Hassabis" class="speaker-card__image">
-                <span class="speaker-card__tag tag-devops">Cloud & DevOps</span>
-                <h3 class="speaker-card__name">Demis Hassabis</h3>
-                <p class="speaker-card__role">Co-Founder and CEO, Google DeepMind</p>
-            </article>
+            <div class="speakers-grid">
 
-            
-            <article class="speaker-card">
-                <img src="./images/gary.png" alt="Gary Marcus" class="speaker-card__image">
-                <span class="speaker-card__tag tag-frontend">Frontend</span>
-                <h3 class="speaker-card__name">Gary Marcus</h3>
-                <p class="speaker-card__role">Staff Engineer, Vercel</p>
-            </article>
+                <article class="speaker-card">
+                    <img src="./images/andrej.png" alt="Andrej Karpathy" class="speaker-card__image">
+                    <span class="speaker-card__tag tag-ai">AI / ML</span>
+                    <h3 class="speaker-card__name">Andrej Karpathy</h3>
+                    <p class="speaker-card__role">Pretraining team, Anthropic</p>
+                </article>
 
-            
-            <article class="speaker-card">
-                <img src="./images/mustafa.png" alt="Mustafa Suleyman" class="speaker-card__image">
-                <span class="speaker-card__tag tag-security">Security</span>
-                <h3 class="speaker-card__name">Mustafa Suleyman</h3>
-                <p class="speaker-card__role">CEO, Microsoft AI</p>
-            </article>
-        </div>
+
+                <article class="speaker-card">
+                    <img src="./images/demis.png" alt="Demis Hassabis" class="speaker-card__image">
+                    <span class="speaker-card__tag tag-devops">Cloud & DevOps</span>
+                    <h3 class="speaker-card__name">Demis Hassabis</h3>
+                    <p class="speaker-card__role">Co-Founder and CEO, Google DeepMind</p>
+                </article>
+
+
+                <article class="speaker-card">
+                    <img src="./images/gary.png" alt="Gary Marcus" class="speaker-card__image">
+                    <span class="speaker-card__tag tag-frontend">Frontend</span>
+                    <h3 class="speaker-card__name">Gary Marcus</h3>
+                    <p class="speaker-card__role">Staff Engineer, Vercel</p>
+                </article>
+
+
+                <article class="speaker-card">
+                    <img src="./images/mustafa.png" alt="Mustafa Suleyman" class="speaker-card__image">
+                    <span class="speaker-card__tag tag-security">Security</span>
+                    <h3 class="speaker-card__name">Mustafa Suleyman</h3>
+                    <p class="speaker-card__role">CEO, Microsoft AI</p>
+                </article>
+            </div>
         </section>
-
-        <section card-purchase>
-            <div card-purchase-top>
+        <section class="card-purchase">
+            <div class="card-purchase-top">
                 <h2 id="card-purchase-header">Secure Your Spot</h2>
-                <p id="card-purchase-text">Early-bird pricing ends August 15, 2026</p>
+                <p id="card-purchase-text">Early-bird pricing ends August 15, 2026.</p>
             </div>
 
             <div class="purchase-board">
-                <div id="purchase-board-pacage">
-                    <p id="purchase-title">standard</p>
+                <div class="purchase-board-package">
+                    <p class="purchase-title">standard</p>
                     <h1>$399</h1>
-                    <p id="purchase-member">per person</p>
+                    <p class="purchase-member">per person</p>
                     <hr>
                     <ul>
                         <li>Access to all 3 conference days</li>
@@ -102,43 +106,56 @@
                         <li>Conference swag bag</li>
                         <li>Digital recordings (30 days)</li>
                     </ul>
-                    <button>Get Standard</button>
+                    <button class="btn-secondary">Get Standard</button>
                 </div>
 
-                <div id="purchase-board-pro">
-                    <p>pro</p>
+                <div class="purchase-board-package pro-card">
+                    <p class="pro-title">pro</p>
                     <h1>$749</h1>
-                    <p>per person</p>
+                    <p class="pro-members">per person</p>
                     <hr>
                     <ul>
                         <li>Everything in Standard</li>
-                        <li>Unlimited workshop acess</li>
+                        <li>Unlimited workshop access</li>
                         <li>Speaker meet & greet</li>
                         <li>VIP networking dinner</li>
                         <li>Lifetime recording access</li>
                         <li>1-on-1 mentorship (30 min)</li>
                     </ul>
-                    <button>Get Pro</button>
+                    <button class="btn-primary">Get Pro</button>
                 </div>
 
-                <div id="purchase-board-pacage">
-                    <p>team</p>
+                <div class="purchase-board-package">
+                    <p class="purchase-title">team</p>
                     <h1>$5,999</h1>
-                    <p>up to 10 people</p>
+                    <p class="purchase-member">up to 10 people</p>
                     <hr>
                     <ul>
                         <li>Everything in Pro (10 seats)</li>
-                        <li>Dedicated team longue access</li>
-                        <li>Privet workshop booking</li>
+                        <li>Dedicated team lounge access</li>
+                        <li>Private workshop booking</li>
                         <li>Company logo on event page</li>
                         <li>Recruitment booth (1 day)</li>
                         <li>Priority customer support</li>
                     </ul>
-                    <button>Concact Us</button>
+                    <button class="btn-dark">Contact Us</button>
                 </div>
             </div>
         </section>
-        
+
+
     </main>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-copyright">
+                <p>© 2026 DevConf. All rights reserved.</p>
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
